@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'App';
+  IsNormal:boolean = true
+  IsMenu:boolean = false
+
+  OpenMenu(){
+    this.IsNormal = false
+    this.IsMenu = true
+  }
+  CloseMenu(){
+    this.IsNormal = true
+    this.IsMenu = false
+  }
 }

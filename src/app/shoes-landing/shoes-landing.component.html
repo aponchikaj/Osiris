@@ -1,0 +1,23 @@
+<header class="bg-gradient-radial w-full flex flex-col items-center justify-center h-[100vh] duration-500 ease-in-out " [style.background]="'radial-gradient(ellipse at center, ' + Shoes.Osiris_Shoes[x].ColorFrom + ', ' + Shoes.Osiris_Shoes[x].ColorTo + ')'">
+    <main class="w-full flex justify-around items-center flex-col  mt-[150px] md:mt-[75px]" id="content">
+        <section class="w-full flex justify-center items-center p-[10px] duration-500 ease-in-out md:my-[70px]">
+            <img src="../../assets/images/{{Shoes.Osiris_Shoes[x].Img}}" alt="" class="absolute w-[400px] md:w-[650px] duration-500 ease-in-out scale-90">
+            <h1 class="flex  text-white font-Main text-[65px] md:text-[170px]">OSIRIS</h1>
+        </section>
+        <section class="flex flex-col duration-500 ease-in-out relative md:flex-row justify-start md:justify-between items-center w-full p-[20px] px-[30px] mt-[70px] h-auto md:my-[0px]">
+            <section class="font-Main text-white text-center md:text-start ">
+                <h1 class="text-2xl">{{Shoes.Osiris_Shoes[x].Name}}</h1>
+                <p>{{Shoes.Osiris_Shoes[x].Title}}</p>
+                <h2 class="my-[10px] text-2xl">${{Shoes.Osiris_Shoes[x].Price}}</h2>
+                <a href=""><button class="rounded-xl border p-[7px] text-xl mt-[10px] duration-500 ease-in-out hover:scale-125 hover:text-[#ccc] hover:border-[#ccc]">More</button></a>
+            </section>
+            <section class="px-[70px] flex mt-[30px] md:mt-[0px]">
+                <button (click)="before()"><i class="fa-solid fa-circle-arrow-left mx-[10px] text-[40px] text-white"></i></button>
+                <button (click)="next()"><i class="fa-solid fa-circle-arrow-right mx-[10px] text-[40px] text-white"></i></button>
+            </section>
+        </section>
+    </main>
+</header>
+<section class="w-full p-[10px] bg-[#2A2A2C] font-Main flex justify-center text-2xl ">
+    <h1 class="text-white">Products are down there.</h1>
+</section>

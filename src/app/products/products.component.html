@@ -1,0 +1,23 @@
+<main class="w-full h-auto p-[10px] flex justify-center items-center flex-wrap bg-[#2B2B2B]">
+
+    <main *ngFor="let i of shoes.Osiris_Shoes" class=" borderrounded flex-wrap mx-[10px] my-[10px] bg-[#ffffff] w-[350px] h-[400px] items-center p-[10px] flex ">
+        <section>
+            <img src="{{i.Img}}" alt="">
+        </section>
+        <section class="w-full flex flex-col my-[10px] mt-[10px] font-Main">
+            <section class="w-full flex justify-center">
+                <h1 class="text-2xl">{{i.Name}}</h1>
+            </section>
+            <section class="flex justify-center md:justify-end">
+                {{i.Price}}$
+            </section>
+            <section class="flex items-end">
+                <p>
+                    {{i.Title}}
+                </p>
+            </section>
+            <section class="my-[10px] m-[10px] flex justify-center md:justify-start items-end"><a href="{{i.Link}}"><button class="rounded border p-[10px] duration-500 ease-in-out hover:scale-110 hover:bg-[#272727] hover:text-white">More</button></a></section>
+        </section>
+    </main>
+
+</main>
