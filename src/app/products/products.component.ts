@@ -8,4 +8,6 @@ import { ShoesService } from '../Services/shoes.service';
 })
 export class ProductsComponent {
   constructor(public shoes:ShoesService){}
+
+  
 }

@@ -1,23 +1,24 @@
 <main class="w-full h-auto p-[10px] flex justify-center items-center flex-wrap bg-[#2B2B2B]">
-
-    <main *ngFor="let i of shoes.Osiris_Shoes" class=" borderrounded flex-wrap mx-[10px] my-[10px] bg-[#ffffff] w-[350px] h-[400px] items-center p-[10px] flex ">
-        <section>
+    <main *ngFor="let i of shoes.Osiris_Shoes" class="rounded-2xl flex-wrap mx-[50px] my-[20px] bg-[#C5C5C5] w-[350px] h-auto items-center flex flex-col text-center items-around">
+        <section class="justify-start flex p-[10px] bg-[#505050] rounded-2xl rounded-b-none">
             <img src="{{i.Img}}" alt="">
         </section>
-        <section class="w-full flex flex-col my-[10px] mt-[10px] font-Main">
-            <section class="w-full flex justify-center">
-                <h1 class="text-2xl">{{i.Name}}</h1>
+        <section class="flex flex-col text-center items-center p-[10px] font-Main">   
+            <section class="text-xl md:text-2xl">
+                <h1>{{i.Name}}</h1>
             </section>
-            <section class="flex justify-center md:justify-end">
-                {{i.Price}}$
+            <section class="text-md md:text-xl">
+                <h3>{{i.Price}}$</h3>
             </section>
-            <section class="flex items-end">
-                <p>
-                    {{i.Title}}
-                </p>
+            <section class="text-sm md:text-md my-[10px]">
+                <h5>{{i.Title}}</h5>
             </section>
-            <section class="my-[10px] m-[10px] flex justify-center md:justify-start items-end"><a href="{{i.Link}}"><button class="rounded border p-[10px] duration-500 ease-in-out hover:scale-110 hover:bg-[#272727] hover:text-white">More</button></a></section>
         </section>
+        <a href="{{i.Link}}" class="w-full bg-[#505050] rounded-b-2xl"><section class="w-full bg-[#505050] text-white rounded-b-2xl p-[10px]">
+            <button class="text-2xl font-Main">More</button>
+        </section></a>
     </main>
-
 </main>
+<section class="p-[20px] bg-[#000000] text-white flex justify-center items-center font-Main">
+    <h1 class="text-xl md:text-2xl">And here is the about section</h1>
+</section>

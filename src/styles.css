@@ -6,3 +6,7 @@
     font-family: 'Main';
     src: url('./assets/fonts/Sequel\ 100\ Wide\ 95.ttf');
 }
+
+*{
+    scroll-behavior: smooth;
+}
