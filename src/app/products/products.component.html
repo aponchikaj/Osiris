@@ -1,6 +1,6 @@
 <main class="w-full h-auto p-[10px] flex justify-center items-center flex-wrap bg-[#2B2B2B]">
-    <main *ngFor="let i of shoes.Osiris_Shoes" class="rounded-2xl flex-wrap mx-[50px] my-[20px] bg-[#C5C5C5] w-[350px] h-auto items-center flex flex-col text-center items-around">
-        <section class="justify-start flex p-[10px] bg-[#505050] rounded-2xl rounded-b-none">
+    <main *ngFor="let i of shoes.Osiris_Shoes" class="rounded-[15px] flex-wrap relative mx-[50px] my-[20px] bg-[#ffffff] w-[350px] h-auto items-center flex flex-col text-center items-around">
+        <section class="justify-start flex p-[10px] rounded-2xl rounded-b-none">
             <img src="{{i.Img}}" alt="">
         </section>
         <section class="flex flex-col text-center items-center p-[10px] font-Main">   
@@ -14,7 +14,7 @@
                 <h5>{{i.Title}}</h5>
             </section>
         </section>
-        <a href="{{i.Link}}" class="w-full bg-[#505050] rounded-b-2xl"><section class="w-full bg-[#505050] text-white rounded-b-2xl p-[10px]">
+        <a href="{{i.Link}}" class="w-full bg-[#DCDCDC] rounded-b-[15px]"><section class="w-full bg-[#505050] text-white rounded-b-2xl p-[10px]">
             <button class="text-2xl font-Main">More</button>
         </section></a>
     </main>
